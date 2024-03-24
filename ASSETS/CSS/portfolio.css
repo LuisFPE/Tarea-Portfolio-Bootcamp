@@ -1,0 +1,181 @@
+/* ================================================= */
+/* MOBILES VIEWS */ 
+/* ================================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Codigo del Header*/
+
+#botonera-principal{
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(121,18,21,255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#botonera-principal > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    transition: all 500ms linear; 
+}
+
+#botonera-principal > div > a{
+    font-family: "Protest Revolution";
+    font-weight: bold;
+    font-size: 2rem;
+    color:white;
+    text-decoration: none; 
+}
+
+#botonera-principal > div:hover{
+    background-color: rgba(52,0,1,255);   
+}
+
+header > img{
+    width: 100%;
+}
+    
+/*Codigo del main*/
+
+main > section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+h1{
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+}
+
+audio{
+    width: 90%;
+}
+
+iframe{
+    width: 80vw;
+    height: 45vw;
+}
+
+main {
+    width: 95vw;
+    padding-left: 2.5vw;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main > article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > article > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitulos{
+    font-family: "Permanent Marker";
+}
+
+.subtitulos:hover{
+    color: rgba(121,18,21,255);
+}
+
+p{
+    text-align: justify;
+    padding-top: 3vh;
+    padding-bottom: 1.5vh;
+}
+
+/* ================================================= */
+/* TABLETS VIEWS */ 
+/* ================================================= */
+
+/* MAYOR O IGUAL DE 768PX (A PARTIR DE 768PX INCLUSIVE) - SMARTPHONES GRANDES, TABLETS */ /* Medium para Bootstrap */
+@media only screen and (min-width:768px){
+
+    /*Codigo del Header*/
+
+    #botonera-principal{
+        height: 10vh;
+        flex-direction: row;
+
+    }
+
+    main > article{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+    }
+        
+    /*Codigo del main*/
+    
+    main > article > div{
+        width: 40%;
+        
+    }
+    
+    audio{
+        width: 70%;
+    }
+ 
+}
+
+
+/* ================================================= */
+/* DESK VIEWS */ 
+/* ================================================= */
+
+/* MAYOR O IGUAL DE 1200PX (A PARTIR DE 1200PX INCLUSIVE) - PC GRANDES, TELEVISIONES */ /* Extra large para Bootstrap */
+@media only screen and (min-width:1200px){
+
+
+    /*Codigo del Header*/
+    
+    #botonera-principal{
+        height: 15vh;
+    }
+    
+    /*Codigo del main*/
+
+    main > section{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    audio{
+        width: 40%;
+    }
+
+}

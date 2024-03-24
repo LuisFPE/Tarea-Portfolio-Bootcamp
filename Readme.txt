@@ -1,0 +1,1 @@
+Tarea del bootcamp de fullstack donde se debe crear un conjunto de paginas web interconectadas donde se demuestren los conocimientos básicos de HTML, CSS y JavaScript 
